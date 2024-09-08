@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-container">
+
+        <!-- Personal Information Section -->
+        <section class="personal-info">
+            <img src="hh.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Urooj</h1>
+            <p>Contact: amnak9628@gmail.com | +923102170484</p>
+        </section>
+        <!-- objective -->
+        <section class="objective">
+            <h2>Objective</h2>
+            <p id="objective">
+               <i>"Passionate Web Developer with extensive experience in designing and implementing dynamic web applications. Looking to utilize expertise in web technologies and a commitment to coding best practices to contribute to a forward-thinking team."</i>
+            </p>
+
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <ul id="education-list">
+                <li>
+                    <strong>Bachelor of Medical</strong><br>
+                    University of Karachi, 2026-2021
+                </li>
+                
+                <li>
+                    <strong>iqra School </strong><br>
+                    malir cant, 2016-2018
+                </li>
+            </ul>
+            <button id="toggle-education-btn">Show Education
+            </button>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul id="skills-list">
+                <li>HTML, 
+                    CSS, 
+                    JavaScript</li>
+                <li>TypeScript, 
+                    React ,
+
+                    Next</li>
+                
+                
+            </ul>
+            <!-- DOUBLE click for result of btn -->
+            <button id="toggle-skills-btn">Show Skills</button>
+
+        </section>
+
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            
+            <ul id="work-list">
+                <li>
+                    <strong>Frontend Developer at GIAIC</strong> (2024 - Present)<br>
+                    Developed interactive web applications using React, TypeScript, and CSS.
+                </li>
+
+            </ul>
+            <button id="toggle-work-btn">Show Work Experience</button>
+        </section>
+    </div>
+    
+  
+    <script src="app.js"></script>
+</body>
+</html>

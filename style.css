@@ -1,0 +1,185 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #645404; 
+    color: #a78c04;  
+}
+
+/* Resume Container */
+.resume-container {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: #101010;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(229, 248, 118, 0.785); 
+    animation: fadeIn 1s ease-in-out;
+}
+#education-list,
+#skills-list,
+#work-list {
+    display: none; 
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Personal Information */
+.personal-info {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #a78c04;  /* Blue border for accent */
+    margin-bottom: 15px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #a78c04;  /* Darker blue-gray for primary text */
+    font-weight: 700;
+}
+
+p {
+    color:#a78c04;  /* Medium gray for secondary text */
+    font-size: 1.1em;
+}
+
+/* Section Headers */
+h2 {
+    margin-bottom: 15px;
+    color: #a78c04;  
+    border-bottom: 2px solid #e5fd5b;  /* Subtle underline */
+    padding-bottom: 5px;
+    font-size: 1.8em;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform-origin: top;
+}
+
+li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    background-color: #151515;  /* Light blue-gray background for list items */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(238, 248, 151, 0.703);  /* Soft shadow for depth */
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Skills Section */
+.skills ul {
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.hidden {
+    opacity: 0;
+    transform: scaleY(0);
+}
+
+/* Button Styles */
+button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #a78c04;  
+    color: rgba(15, 15, 15, 0.937);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1em;
+    /* transition: background-color 0.3s, transform 0.2s; */
+    animation: bounce 2s infinite;
+}
+
+button:hover {
+    color:#fbec9f;  
+    /* transform: translateY(-2px);  */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-5px);
+    }
+    60% {
+        transform: translateY(-3px);
+    }
+}
+
+/* Work Experience */
+.work-experience {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .resume-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+    }
+}
